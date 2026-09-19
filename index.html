@@ -1,0 +1,820 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>身体の取扱説明書</title>
+<meta name="description" content="小杉先生によるコンディショニング教室＆個別整体イベント。痛くなる前に、自分で整えられる身体へ。10月31日（土）・11月1日（日）開催。">
+<meta property="og:title" content="小杉先生 コンディショニング・整体イベント">
+<meta property="og:description" content="痛くなってから整えるのではなく、不調が出る前に、自分で整えられる身体へ。">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Oswald:wght@400;500&display=swap">
+<style>
+  /* ============================================================
+     カラートークン：藍（あい）を一点の差し色に、紙は青みのある灰白
+     ============================================================ */
+  :root{
+    color-scheme: light;
+    --paper:      #f3f4f1;
+    --surface:    #ffffff;
+    --surface-2:  #eaece7;
+    --ink:        #1c2220;
+    --ink-soft:   #4d5654;
+    --ink-faint:  #7c8583;
+    --rule:       #d5d8d2;
+    --ai:         #22496b;
+    --ai-deep:    #17334c;
+    --ai-wash:    #e3eaf0;
+    --brass:      #8d7327;
+    --shadow:     0 1px 2px rgba(28,34,32,.05), 0 8px 24px -16px rgba(28,34,32,.35);
+    --cta-fg:     #ffffff;
+    --cl-bg:      #17334c;
+    --cl-fg:      #eef3f7;
+    --cl-rule:    rgba(255,255,255,.32);
+    --cl-accent:  #c9a95c;
+    --cl-cta-bg:  #ffffff;
+    --cl-cta-bg-h:#e3eaf0;
+    --cl-cta-fg:  #17334c;
+
+    --f-display: "Shippori Mincho B1", "Hiragino Mincho ProN", "Yu Mincho", serif;
+    --f-body: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Yu Gothic", system-ui, sans-serif;
+    --f-num: "Oswald", "Zen Kaku Gothic New", system-ui, sans-serif;
+
+    --col: 42rem;
+    --gutter: 1.25rem;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      color-scheme: dark;
+      --paper:      #141917;
+      --surface:    #1b211f;
+      --surface-2:  #232a28;
+      --ink:        #e9ece9;
+      --ink-soft:   #b0b8b5;
+      --ink-faint:  #848d8b;
+      --rule:       #333b39;
+      --ai:         #8fb8d8;
+      --ai-deep:    #b8d3e8;
+      --ai-wash:    #1f2d38;
+      --brass:      #d3b866;
+      --shadow:     0 1px 2px rgba(0,0,0,.4), 0 10px 28px -18px rgba(0,0,0,.9);
+      --cta-fg:     #141917;
+      --cl-bg:      #232a28;
+      --cl-fg:      #e9ece9;
+      --cl-rule:    #3d4644;
+      --cl-accent:  #d3b866;
+      --cl-cta-bg:  #8fb8d8;
+      --cl-cta-bg-h:#b8d3e8;
+      --cl-cta-fg:  #141917;
+    }
+  }
+  :root[data-theme="dark"]{
+    color-scheme: dark;
+    --paper:      #141917;
+    --surface:    #1b211f;
+    --surface-2:  #232a28;
+    --ink:        #e9ece9;
+    --ink-soft:   #b0b8b5;
+    --ink-faint:  #848d8b;
+    --rule:       #333b39;
+    --ai:         #8fb8d8;
+    --ai-deep:    #b8d3e8;
+    --ai-wash:    #1f2d38;
+    --brass:      #d3b866;
+    --shadow:     0 1px 2px rgba(0,0,0,.4), 0 10px 28px -18px rgba(0,0,0,.9);
+    --cta-fg:     #141917;
+    --cl-bg:      #232a28;
+    --cl-fg:      #e9ece9;
+    --cl-rule:    #3d4644;
+    --cl-accent:  #d3b866;
+    --cl-cta-bg:  #8fb8d8;
+    --cl-cta-bg-h:#b8d3e8;
+    --cl-cta-fg:  #141917;
+  }
+
+  *,*::before,*::after{ box-sizing:border-box; }
+  html{ -webkit-text-size-adjust:100%; }
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--f-body);
+    font-size:1rem;
+    line-height:2;
+    letter-spacing:.02em;
+    padding-bottom:5.5rem;
+  }
+  @media (min-width:760px){ body{ padding-bottom:0; } }
+  img{ max-width:100%; display:block; }
+  a{ color:var(--ai); }
+
+  .wrap{
+    width:100%;
+    max-width:var(--col);
+    margin-inline:auto;
+    padding-inline:var(--gutter);
+  }
+  .wrap.wide{ max-width:56rem; }
+
+  /* --- セクション枠 ------------------------------------------- */
+  .sec{ padding-block:4.5rem; }
+  @media (min-width:760px){ .sec{ padding-block:6rem; } }
+  .band{ background:var(--surface); border-block:1px solid var(--rule); }
+
+  .label{
+    font-family:var(--f-num);
+    font-size:.75rem;
+    letter-spacing:.24em;
+    text-transform:uppercase;
+    color:var(--brass);
+    line-height:1;
+    margin:0 0 1.25rem;
+    display:flex;
+    align-items:center;
+    gap:.7rem;
+  }
+  .label::before{ content:""; width:1.75rem; height:1px; background:var(--brass); flex:none; }
+
+  h1,h2,h3{
+    font-family:var(--f-display);
+    font-weight:600;
+    line-height:1.6;
+    letter-spacing:.01em;
+    text-wrap:balance;
+    margin:0;
+  }
+  h2{ font-size:1.5rem; margin-bottom:2rem; }
+  @media (min-width:760px){ h2{ font-size:1.875rem; } }
+  h3{ font-size:1.1875rem; }
+  p{ margin:0 0 1.5rem; }
+  p:last-child{ margin-bottom:0; }
+
+  /* --- ヒーロー ----------------------------------------------- */
+  .hero{
+    padding-block:3.5rem;
+    background:
+      radial-gradient(120% 80% at 82% -10%, var(--ai-wash) 0%, transparent 58%),
+      var(--paper);
+  }
+  .eyebrow{
+    font-size:.8125rem;
+    letter-spacing:.14em;
+    color:var(--ink-soft);
+    margin:0 0 1.75rem;
+    padding-left:.9rem;
+    border-left:2px solid var(--ai);
+    line-height:1.9;
+  }
+  .hero h1{
+    font-size:clamp(1.625rem, 6.2vw, 2.625rem);
+    line-height:1.55;
+    margin-bottom:2rem;
+  }
+  .hero h1 .sub{ display:block; color:var(--ink-soft); font-size:.7em; }
+  .hero h1 em{
+    font-style:normal;
+    background:linear-gradient(transparent 62%, var(--ai-wash) 62%);
+    padding-inline:.06em;
+  }
+  .hero-body{ color:var(--ink-soft); font-size:.9375rem; }
+  .hero-body strong{ color:var(--ink); font-weight:500; }
+
+  .symptoms{
+    list-style:none;
+    margin:0 0 2rem;
+    padding:1.25rem 0 1.25rem 1.25rem;
+    border-left:1px solid var(--rule);
+    display:flex; flex-direction:column; gap:.5rem;
+    font-size:.9375rem;
+    color:var(--ink-soft);
+    line-height:1.85;
+  }
+
+  .manual{
+    font-family:var(--f-display);
+    font-size:1.125rem;
+    font-weight:600;
+    color:var(--ai);
+    line-height:1.9;
+  }
+
+  /* --- CTA ---------------------------------------------------- */
+  .cta-block{ margin-top:2.5rem; }
+  .cta{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:.6rem;
+    width:100%;
+    padding:1.1rem 1.5rem;
+    background:var(--ai);
+    color:var(--cta-fg);
+    font-family:var(--f-body);
+    font-weight:700;
+    font-size:1.0625rem;
+    letter-spacing:.06em;
+    line-height:1.4;
+    text-decoration:none;
+    border-radius:2px;
+    box-shadow:var(--shadow);
+    transition:background .18s ease, transform .18s ease;
+  }
+  .cta:hover{ background:var(--ai-deep); transform:translateY(-1px); }
+  .cta:focus-visible{ outline:2px solid var(--brass); outline-offset:3px; }
+  .cta-note{
+    margin:.875rem 0 0;
+    font-size:.8125rem;
+    color:var(--ink-faint);
+    line-height:1.8;
+    text-align:center;
+  }
+  @media (min-width:600px){
+    .cta{ width:auto; min-width:22rem; }
+    .cta-note{ text-align:left; }
+  }
+
+  /* --- おすすめリスト ------------------------------------------ */
+  .checks{ list-style:none; margin:0; padding:0; }
+  .checks li{
+    display:grid;
+    grid-template-columns:1.5rem 1fr;
+    align-items:start;
+    padding:.9rem 0;
+    border-bottom:1px solid var(--rule);
+    line-height:1.85;
+    font-size:.9375rem;
+  }
+  .checks li:first-child{ border-top:1px solid var(--rule); }
+  .checks li::before{
+    content:"";
+    width:.5rem; height:.5rem;
+    margin-top:.78rem;
+    border-radius:50%;
+    background:var(--ai);
+    opacity:.85;
+  }
+
+  /* --- 得られる3つのこと（順序に意味があるので連番） ------------- */
+  .points{ display:flex; flex-direction:column; gap:2.5rem; }
+  .point{ display:grid; grid-template-columns:2.75rem 1fr; gap:0 1rem; align-items:start; }
+  .point .n{
+    font-family:var(--f-num);
+    font-size:2rem;
+    line-height:1;
+    color:var(--ai);
+    padding-top:.15rem;
+    border-top:2px solid var(--ai);
+    font-variant-numeric:tabular-nums;
+  }
+  .point h3{ margin-bottom:.75rem; }
+  .point p{ color:var(--ink-soft); font-size:.9375rem; }
+  @media (max-width:520px){
+    .point{ grid-template-columns:1fr; gap:.75rem; }
+    .point .n{ justify-self:start; padding-right:2rem; }
+  }
+
+  /* --- 講師 ---------------------------------------------------- */
+  .teacher{ display:grid; gap:1.75rem; }
+  @media (min-width:700px){
+    .teacher{ grid-template-columns:15rem 1fr; gap:2.5rem; align-items:start; }
+  }
+  .portrait{
+    position:relative;
+    margin:0;
+    max-width:17rem;
+    aspect-ratio:3/4;
+    max-width:100%;
+    background:var(--surface-2);
+    border:1px solid var(--rule);
+    overflow:hidden;
+    border-radius:2px;
+  }
+  .portrait img{ width:100%; height:100%; object-fit:cover; }
+  .portrait .ph{
+    display:none;
+    position:absolute; inset:0;
+    align-items:center; justify-content:center;
+    text-align:center;
+    padding:1.25rem;
+    font-size:.75rem;
+    line-height:2;
+    color:var(--ink-faint);
+    letter-spacing:.04em;
+  }
+  .portrait.is-empty .ph{ display:flex; }
+  .portrait figcaption{
+    position:absolute; left:0; bottom:0;
+    background:var(--ai);
+    color:var(--cta-fg);
+    font-size:.75rem;
+    letter-spacing:.12em;
+    padding:.4rem .8rem;
+    line-height:1.5;
+  }
+  .teacher h3{ margin-bottom:1rem; }
+  .teacher p{ font-size:.9375rem; color:var(--ink-soft); }
+  .credits{
+    list-style:none; margin:1.5rem 0 0; padding:0;
+    display:flex; flex-direction:column; gap:.6rem;
+    font-size:.8125rem;
+    line-height:1.75;
+    color:var(--ink-soft);
+  }
+  .credits li{
+    display:grid;
+    grid-template-columns:4rem 1fr;
+    gap:.9rem;
+    padding-top:.6rem;
+    border-top:1px solid var(--rule);
+  }
+  .credits .yr{
+    font-family:var(--f-num);
+    color:var(--brass);
+    font-variant-numeric:tabular-nums;
+    letter-spacing:.04em;
+  }
+
+  /* --- 参加方法 ------------------------------------------------ */
+  .plans{ display:grid; gap:1rem; margin-bottom:2.5rem; }
+  @media (min-width:860px){
+    .plans{ grid-template-columns:repeat(3,1fr); }
+    .plan h3{ font-size:1.125rem; }
+  }
+  .plan{
+    background:var(--paper);
+    border:1px solid var(--rule);
+    border-radius:2px;
+    padding:1.75rem 1.5rem;
+    display:flex; flex-direction:column;
+  }
+  .plan.feature{ border-color:var(--ai); box-shadow:var(--shadow); position:relative; }
+  .plan.feature::before{
+    content:"両方受けられます";
+    position:absolute; top:-.8rem; left:1.5rem;
+    background:var(--ai); color:var(--cta-fg);
+    font-size:.6875rem; letter-spacing:.12em;
+    padding:.25rem .7rem; line-height:1.6;
+  }
+  .plan h3{ font-size:1.25rem; margin-bottom:.75rem; letter-spacing:0; }
+  .plan .for{ font-size:.875rem; color:var(--ink-soft); margin-bottom:1.25rem; line-height:1.85; }
+  .spec{
+    margin:0 0 1.5rem;
+    padding-top:1rem;
+    border-top:1px solid var(--rule);
+    display:flex; flex-direction:column; gap:.75rem;
+    font-size:.875rem;
+    line-height:1.7;
+  }
+  .spec dt{ font-weight:500; }
+  .spec dd{ margin:0; color:var(--ink-faint); font-size:.8125rem; }
+  .spec .plus{ font-family:var(--f-num); color:var(--ink-faint); letter-spacing:.1em; }
+  .price{
+    margin-top:auto;
+    padding-top:1rem;
+    border-top:1px solid var(--rule);
+    display:flex; align-items:baseline; gap:.4rem;
+  }
+  .price .v{
+    font-family:var(--f-num);
+    font-size:1.875rem;
+    font-weight:500;
+    line-height:1.2;
+    color:var(--ink);
+    font-variant-numeric:tabular-nums;
+  }
+  .price .u{ font-size:.8125rem; color:var(--ink-faint); }
+
+  /* --- 参加者の声 ---------------------------------------------- */
+  .voices{ display:flex; flex-direction:column; gap:1.5rem; }
+  .voice{
+    margin:0;
+    padding:1.5rem 1.5rem 1.5rem 2.75rem;
+    background:var(--paper);
+    border:1px solid var(--rule);
+    border-radius:2px;
+    position:relative;
+    font-size:.9375rem;
+    line-height:1.95;
+  }
+  .voice::before{
+    content:"“";
+    position:absolute; left:.9rem; top:.9rem;
+    font-family:var(--f-display);
+    font-size:2.25rem;
+    line-height:1;
+    color:var(--ai);
+    opacity:.5;
+  }
+  .voice p{ margin:0; }
+
+  /* --- 開催概要 ------------------------------------------------ */
+  .facts{ margin:0; border-top:1px solid var(--rule); }
+  .facts > div{
+    display:grid;
+    grid-template-columns:1fr;
+    padding:1rem 0;
+    border-bottom:1px solid var(--rule);
+  }
+  @media (min-width:560px){
+    .facts > div{ grid-template-columns:9rem 1fr; gap:1rem; align-items:baseline; }
+  }
+  .facts dt{ font-size:.8125rem; letter-spacing:.1em; color:var(--ink-faint); line-height:1.9; }
+  .facts dd{ margin:0; font-size:.9375rem; line-height:1.9; }
+  .facts dd .num{ font-family:var(--f-num); font-variant-numeric:tabular-nums; font-size:1.0625rem; letter-spacing:.02em; }
+  .facts dd small{ display:block; font-size:.8125rem; color:var(--ink-faint); line-height:1.8; }
+  .note{ margin:1.25rem 0 0; font-size:.8125rem; color:var(--ink-faint); line-height:1.9; }
+
+  /* --- FAQ ----------------------------------------------------- */
+  .faq{ border-top:1px solid var(--rule); }
+  .faq details{ border-bottom:1px solid var(--rule); }
+  .faq summary{
+    display:grid;
+    grid-template-columns:1.5rem 1fr 1.25rem;
+    gap:.5rem;
+    align-items:start;
+    padding:1.125rem 0;
+    cursor:pointer;
+    list-style:none;
+    font-family:var(--f-display);
+    font-weight:600;
+    font-size:1rem;
+    line-height:1.8;
+  }
+  .faq summary::-webkit-details-marker{ display:none; }
+  .faq summary::before{
+    content:"Q";
+    font-family:var(--f-num);
+    color:var(--ai);
+    line-height:1.8;
+  }
+  .faq summary::after{
+    content:"";
+    width:.6rem; height:.6rem;
+    margin-top:.55rem;
+    border-right:1.5px solid var(--ink-faint);
+    border-bottom:1.5px solid var(--ink-faint);
+    transform:rotate(45deg);
+    transition:transform .2s ease;
+    justify-self:end;
+  }
+  .faq details[open] summary::after{ transform:rotate(-135deg); }
+  .faq summary:focus-visible{ outline:2px solid var(--ai); outline-offset:2px; }
+  .faq .a{
+    padding:0 1.25rem 1.5rem 2rem;
+    font-size:.9375rem;
+    color:var(--ink-soft);
+    line-height:1.95;
+  }
+  .faq .a p{ margin:0 0 1rem; }
+  .faq .a p:last-child{ margin-bottom:0; }
+  .faq .a ul{ margin:0 0 1rem; padding-left:1.1rem; }
+
+  /* --- クロージング -------------------------------------------- */
+  .closing{ background:var(--cl-bg); color:var(--cl-fg); }
+  .closing h2{ color:inherit; font-size:1.5rem; }
+  @media (min-width:760px){ .closing h2{ font-size:1.875rem; } }
+  .closing p{ color:inherit; opacity:.88; font-size:.9375rem; }
+  .closing .label{ color:var(--cl-accent); }
+  .closing .label::before{ background:var(--cl-accent); }
+  .closing .quotes{
+    list-style:none; margin:0 0 1.5rem; padding:0 0 0 1.25rem;
+    border-left:1px solid var(--cl-rule);
+    display:flex; flex-direction:column; gap:.4rem;
+    font-size:.9375rem;
+  }
+  .closing .cta{ background:var(--cl-cta-bg); color:var(--cl-cta-fg); }
+  .closing .cta:hover{ background:var(--cl-cta-bg-h); }
+  .closing .cta-note{ color:inherit; opacity:.78; }
+
+  /* --- フッター ------------------------------------------------ */
+  .site-footer{
+    padding-block:2.5rem;
+    border-top:1px solid var(--rule);
+    font-size:.8125rem;
+    color:var(--ink-faint);
+    line-height:1.9;
+  }
+
+  /* --- スマホ固定CTA ------------------------------------------- */
+  .sticky{
+    position:fixed;
+    left:0; right:0; bottom:0;
+    z-index:20;
+    background:var(--paper);
+    border-top:1px solid var(--rule);
+    padding:.75rem var(--gutter);
+    padding-bottom:calc(.75rem + env(safe-area-inset-bottom, 0px));
+    box-shadow:0 -6px 20px -14px rgba(0,0,0,.5);
+  }
+  .sticky .cta{ padding-block:.9rem; font-size:1rem; }
+  @media (min-width:760px){ .sticky{ display:none; } }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ animation:none !important; transition:none !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ヒーロー -->
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">小杉先生 コンディショニング・整体イベント<br>10月31日（土）・11月1日（日）開催</p>
+    <h1>
+      <span class="sub">痛くなってから整えるのではなく、</span>
+      不調が出る前に、<em>自分で整えられる身体</em>へ。
+    </h1>
+
+    <ul class="symptoms">
+      <li>スクワットでいつも同じところが詰まる。</li>
+      <li>ベンチプレスで片側の肩だけ気になる。</li>
+      <li>デッドリフトのあと、いつも同じ場所が張る。</li>
+    </ul>
+
+    <div class="hero-body">
+      <p>でもトレーニングはできるから、<br>「まあ大丈夫かな」とそのままにしていませんか？</p>
+      <p>今回のイベントでは、<br>
+        <strong>「自分の身体は、どんなときに崩れやすいのか」</strong><br>
+        <strong>「そんなとき、何をすればいいのか」</strong><br>
+        を知り、</p>
+      <p class="manual">自分の身体の取扱説明書を<br>持ち帰ることを目指します。</p>
+    </div>
+
+    <div class="cta-block">
+      <a class="cta" href="https://forms.gle/SshC7FAoAGaS4ykSA" target="_blank" rel="noopener">▶ 参加方法を選んで申し込む</a>
+      <p class="cta-note">少人数・先着順での受付です。</p>
+    </div>
+  </div>
+</header>
+
+<!-- こんな方におすすめ -->
+<section class="sec">
+  <div class="wrap">
+    <p class="label">For</p>
+    <h2>こんな方におすすめです</h2>
+    <ul class="checks">
+      <li><span>スクワットやデッドリフトで、いつも同じ場所が気になる</span></li>
+      <li><span>ベンチプレスで肩に違和感を感じることがある</span></li>
+      <li><span>身体の硬さや左右差が気になる</span></li>
+      <li><span>とりあえずストレッチをしているけれど、自分に合っているか分からない</span></li>
+      <li><span>不調が出る前に、自分で身体を整えられるようになりたい</span></li>
+      <li><span>これからも長くトレーニングを続けたい</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 得られる3つのこと -->
+<section class="sec band">
+  <div class="wrap">
+    <p class="label">Outcome</p>
+    <h2>このイベントで得られる3つのこと</h2>
+    <div class="points">
+      <article class="point">
+        <div class="n">1</div>
+        <div>
+          <h3>自分の身体のクセが分かる</h3>
+          <p>同じビッグ3をしていても、負担が出やすい場所や身体の使い方は人それぞれ。<br>「自分の場合はどうなのか？」を知るきっかけをつくります。</p>
+        </div>
+      </article>
+      <article class="point">
+        <div class="n">2</div>
+        <div>
+          <h3>自分に必要な整え方が分かる</h3>
+          <p>「硬いから伸ばす」だけではなく、今の自分にはどんな動きが必要なのか。<br>その人それぞれの身体や悩みに合わせて、柔軟体操や動きを教えてもらいます。</p>
+        </div>
+      </article>
+      <article class="point">
+        <div class="n">3</div>
+        <div>
+          <h3>不調が出る前に対応できるようになる</h3>
+          <p>「今日は少しいつもと違う」。そんな小さな変化に気づき、「こういうときは、これをやろう」と自分で選択できる身体へ。</p>
+          <p>イベント後も、日常やトレーニングで使える方法を持ち帰ります。</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 講師 -->
+<section class="sec">
+  <div class="wrap wide">
+    <p class="label">Instructor</p>
+    <h2>講師｜小杉先生</h2>
+    <div class="teacher">
+      <figure class="portrait" id="portrait">
+        <img src="assets/kosugi.jpg" alt="講師・小杉先生" id="portrait-img" width="600" height="800">
+        <span class="ph">ここに講師写真が入ります<br>assets/kosugi.jpg<br>（縦横比 3：4／600×800px 以上推奨）</span>
+        <figcaption>小杉先生</figcaption>
+      </figure>
+      <div>
+        <h3>身体のスペシャリスト</h3>
+        <p>廣戸聡一先生の一番弟子として、1996年から廣戸道場で施術。</p>
+        <p>2013年からは千葉ロッテとアドバイザリー契約を結び、野球だけではなく、さまざまな競技・幅広い年代のアスリートへ指導・施術を行ってきた身体のスペシャリストです。</p>
+        <ul class="credits">
+          <li><span class="yr">1996–</span><span>廣戸聡一先生の一番弟子として廣戸道場で施術</span></li>
+          <li><span class="yr">2013–</span><span>千葉ロッテとアドバイザリー契約</span></li>
+          <li><span class="yr">現在</span><span>競技・年代を問わず、アスリートへ指導・施術</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 参加方法 -->
+<section class="sec band">
+  <div class="wrap wide">
+    <p class="label">Plans</p>
+    <h2>3つの参加方法から選べます</h2>
+    <div class="plans">
+      <article class="plan feature">
+        <h3>コンディショニング＋整体</h3>
+        <p class="for">自分で整える方法を学びながら、個別でもしっかり身体を見てもらいたい方へ。</p>
+        <dl class="spec">
+          <div><dt>コンディショニング教室</dt><dd>60分／定員5名</dd></div>
+          <div class="plus">＋</div>
+          <div><dt>個別整体</dt><dd>30分</dd></div>
+        </dl>
+        <p class="price"><span class="v">18,600</span><span class="u">円（税込）</span></p>
+      </article>
+
+      <article class="plan">
+        <h3>整体のみ</h3>
+        <p class="for">今の身体の状態や悩みを、個別でじっくり見てもらいたい方へ。</p>
+        <dl class="spec">
+          <div><dt>個別整体</dt><dd>30分</dd></div>
+        </dl>
+        <p class="price"><span class="v">12,000</span><span class="u">円（税込）</span></p>
+      </article>
+
+      <article class="plan">
+        <h3>コンディショニングのみ</h3>
+        <p class="for">自分の身体のクセを知り、自分で整える方法を身につけたい方へ。</p>
+        <dl class="spec">
+          <div><dt>コンディショニング教室</dt><dd>60分／定員5名</dd></div>
+        </dl>
+        <p class="price"><span class="v">6,600</span><span class="u">円（税込）</span></p>
+      </article>
+    </div>
+
+    <div class="cta-block">
+      <a class="cta" href="https://forms.gle/SshC7FAoAGaS4ykSA" target="_blank" rel="noopener">▶ 参加方法を選んで申し込む</a>
+      <p class="cta-note">お申込みフォームで、参加方法と時間枠をお選びいただけます。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 参加者の声 -->
+<section class="sec">
+  <div class="wrap">
+    <p class="label">Voices</p>
+    <h2>参加された方の声</h2>
+    <div class="voices">
+      <figure class="voice"><p>自分の身体でも分かっていない事ばかりで、これからの人生でもっと動作を意識して身体を大切にしようと思いました。</p></figure>
+      <figure class="voice"><p>施術後の身体の動き、足裏の接地の感覚が驚くほど違いを実感出来ました。</p></figure>
+      <figure class="voice"><p>いかに動くまでの準備が大切かを学べました。24時間使えそうな情報や行動を教えて頂き、毎日が楽しいです。</p></figure>
+    </div>
+  </div>
+</section>
+
+<!-- 開催概要 -->
+<section class="sec band">
+  <div class="wrap">
+    <p class="label">Details</p>
+    <h2>開催概要</h2>
+    <dl class="facts">
+      <div>
+        <dt>日程</dt>
+        <dd><span class="num">10月31日（土）・11月1日（日）</span></dd>
+      </div>
+      <div>
+        <dt>コンディショニング教室</dt>
+        <dd>1回60分／定員5名<small>6,600円（税込）</small></dd>
+      </div>
+      <div>
+        <dt>開催数</dt>
+        <dd>土曜2回・日曜2回<small>最大参加者数 20名</small></dd>
+      </div>
+      <div>
+        <dt>整体</dt>
+        <dd>1回30分<small>12,000円（税込）</small></dd>
+      </div>
+    </dl>
+    <p class="note">※各時間枠は申込みページでご確認ください。</p>
+  </div>
+</section>
+
+<!-- よくある質問 -->
+<section class="sec">
+  <div class="wrap">
+    <p class="label">FAQ</p>
+    <h2>よくある質問</h2>
+    <div class="faq">
+      <details open>
+        <summary>痛みがなくても参加できますか？</summary>
+        <div class="a">
+          <p>はい。むしろ今回のイベントは、痛みが強くなる前に自分の身体を知りたい方にもおすすめしています。</p>
+          <ul>
+            <li>「なんとなく硬い」</li>
+            <li>「左右差がある気がする」</li>
+            <li>「いつも同じ場所が気になる」</li>
+          </ul>
+          <p>という段階でもご参加いただけます。</p>
+        </div>
+      </details>
+      <details>
+        <summary>筋トレ初心者でも参加できますか？</summary>
+        <div class="a">
+          <p>はい。トレーニング歴や競技レベルは問いません。</p>
+          <p>ビッグ3をしている方はもちろん、健康のために筋トレを続けている方にも活かしていただける内容です。</p>
+        </div>
+      </details>
+      <details>
+        <summary>コンディショニングと整体、どちらを選べばいいですか？</summary>
+        <div class="a">
+          <p>自分で整える方法を学びたい方は、コンディショニングがおすすめです。</p>
+          <p>今の身体を個別でじっくり見てもらいたい方は、整体がおすすめです。</p>
+          <p>どちらも受けたい方は、コンディショニング＋整体をお選びください。</p>
+        </div>
+      </details>
+      <details>
+        <summary>コンディショニングでは、全員同じことをしますか？</summary>
+        <div class="a">
+          <p>全員で共通して行う内容もありますが、一人ひとりの悩みを聞きながら進めます。</p>
+          <p>「自分の場合はどうなのか？」を聞けるよう、1グループ5名の少人数制で開催します。</p>
+        </div>
+      </details>
+      <details>
+        <summary>身体が硬くても大丈夫ですか？</summary>
+        <div class="a">
+          <p>もちろん大丈夫です。身体の硬さを競うイベントではありません。</p>
+          <p>今の自分の身体を知り、自分に合った動きや整え方を見つけることが目的です。</p>
+        </div>
+      </details>
+      <details>
+        <summary>整体だけでも参加できますか？</summary>
+        <div class="a">
+          <p>はい。整体のみ、コンディショニングのみ、両方の3つからお選びいただけます。</p>
+        </div>
+      </details>
+      <details>
+        <summary>申込みは先着順ですか？</summary>
+        <div class="a">
+          <p>はい。コンディショニングは各回5名、整体も枠数に限りがあります。</p>
+          <p>希望する時間がある方は、早めのお申込みがおすすめです。</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- クロージング -->
+<section class="sec closing">
+  <div class="wrap">
+    <p class="label">Message</p>
+    <h2>まだ痛くない今こそ、<br>身体を知るタイミング</h2>
+    <p>今回のイベントは、「今、すごく痛い人」だけのものではありません。</p>
+    <p>むしろ、</p>
+    <ul class="quotes">
+      <li>「たまに肩が気になる」</li>
+      <li>「なんとなく左右差がある」</li>
+      <li>「最近、少し身体が硬い」</li>
+    </ul>
+    <p>でも、まだ普通にトレーニングはできている。<br>そんな方にこそ、自分の身体を知ってほしいと思っています。</p>
+    <p>痛くなってから慌てるのではなく、<br>「今日はちょっと違うから、これをしておこう」と、自分で判断できるようになる。</p>
+    <p>これからも好きなトレーニングを続けるために、<br>自分の身体の取扱説明書をつくりに来てください。</p>
+    <div class="cta-block">
+      <a class="cta" href="https://forms.gle/SshC7FAoAGaS4ykSA" target="_blank" rel="noopener">▶ 参加方法を選んで申し込む</a>
+      <p class="cta-note">少人数・先着順での受付です。</p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>小杉先生 コンディショニング・整体イベント｜10月31日（土）・11月1日（日）開催</p>
+  </div>
+</footer>
+
+<div class="sticky">
+  <a class="cta" href="https://forms.gle/SshC7FAoAGaS4ykSA" target="_blank" rel="noopener">▶ 参加方法を選んで申し込む</a>
+</div>
+
+<script>
+  // 講師写真が未設置のあいだは、差し込み位置のガイドを表示する
+  (function () {
+    var fig = document.getElementById('portrait');
+    var img = document.getElementById('portrait-img');
+    if (!fig || !img) return;
+    function showGuide() {
+      fig.classList.add('is-empty');
+      if (img.parentNode) img.remove();
+    }
+    img.addEventListener('error', showGuide);
+    if (img.complete && img.naturalWidth === 0) showGuide();
+  })();
+</script>
+
+</body>
+</html>
