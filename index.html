@@ -395,21 +395,44 @@
   .spec dt{ font-weight:500; }
   .spec dd{ margin:0; color:var(--ink-faint); font-size:.8125rem; }
   .spec .plus{ font-family:var(--f-num); color:var(--ink-faint); letter-spacing:.1em; }
-  .price{
+  .price-set{
     margin-top:auto;
     padding-top:1rem;
     border-top:1px solid var(--rule);
-    display:flex; align-items:baseline; gap:.4rem;
+    display:flex; flex-direction:column; gap:.5rem;
+  }
+  .price{
+    margin:0;
+    display:flex; align-items:baseline; gap:.5rem; flex-wrap:wrap;
+  }
+  .price .tag{
+    font-size:.75rem;
+    letter-spacing:.08em;
+    line-height:1.6;
+    padding:.1rem .5rem;
+    border-radius:2px;
+    background:var(--ai-wash);
+    color:var(--ai);
+    white-space:nowrap;
   }
   .price .v{
     font-family:var(--f-num);
-    font-size:1.875rem;
+    font-size:1.75rem;
     font-weight:500;
     line-height:1.2;
     color:var(--ink);
     font-variant-numeric:tabular-nums;
   }
   .price .u{ font-size:.8125rem; color:var(--ink-faint); }
+  .price .amount{
+    display:inline-flex;
+    align-items:baseline;
+    gap:.25rem;
+    white-space:nowrap;
+  }
+  .price.general .tag{ background:var(--surface-2); color:var(--ink-soft); }
+  .price.general .v{ font-size:1.3125rem; color:var(--ink-soft); }
+  .price.general .u{ font-size:.75rem; }
 
   /* --- 参加者の声 ---------------------------------------------- */
   .voices{ display:flex; flex-direction:column; gap:1.5rem; }
@@ -676,7 +699,10 @@
           <div class="plus">＋</div>
           <div><dt>個別整体</dt><dd>30分</dd></div>
         </dl>
-        <p class="price"><span class="v">18,600</span><span class="u">円（税込）</span></p>
+        <div class="price-set">
+          <p class="price"><span class="tag">メンバー</span><span class="amount"><span class="v">18,600</span><span class="u">円（税込）</span></span></p>
+          <p class="price general"><span class="tag">一般</span><span class="amount"><span class="v">20,600</span><span class="u">円（税込）</span></span></p>
+        </div>
       </article>
 
       <article class="plan">
@@ -685,7 +711,10 @@
         <dl class="spec">
           <div><dt>個別整体</dt><dd>30分</dd></div>
         </dl>
-        <p class="price"><span class="v">12,000</span><span class="u">円（税込）</span></p>
+        <div class="price-set">
+          <p class="price"><span class="tag">メンバー</span><span class="amount"><span class="v">12,000</span><span class="u">円（税込）</span></span></p>
+          <p class="price general"><span class="tag">一般</span><span class="amount"><span class="v">14,000</span><span class="u">円（税込）</span></span></p>
+        </div>
       </article>
 
       <article class="plan">
@@ -694,9 +723,14 @@
         <dl class="spec">
           <div><dt>コンディショニング教室</dt><dd>60分／定員5名</dd></div>
         </dl>
-        <p class="price"><span class="v">6,600</span><span class="u">円（税込）</span></p>
+        <div class="price-set">
+          <p class="price"><span class="tag">メンバー</span><span class="amount"><span class="v">6,600</span><span class="u">円（税込）</span></span></p>
+          <p class="price general"><span class="tag">一般</span><span class="amount"><span class="v">8,600</span><span class="u">円（税込）</span></span></p>
+        </div>
       </article>
     </div>
+
+    <p class="note">※「メンバー」はジム会員の方の料金です。一般の方は各プラン＋2,000円（税込）となります。</p>
 
     <div class="cta-block">
       <a class="cta" href="https://forms.gle/SshC7FAoAGaS4ykSA" target="_blank" rel="noopener">▶ 参加方法を選んで申し込む</a>
@@ -731,7 +765,7 @@
       </div>
       <div>
         <dt>コンディショニング教室</dt>
-        <dd>1回60分／定員5名<small>6,600円（税込）</small></dd>
+        <dd>1回60分／定員5名<small>メンバー 6,600円／一般 8,600円（税込）</small></dd>
       </div>
       <div>
         <dt>開催数</dt>
@@ -739,7 +773,7 @@
       </div>
       <div>
         <dt>整体</dt>
-        <dd>1回30分<small>12,000円（税込）</small></dd>
+        <dd>1回30分<small>メンバー 12,000円／一般 14,000円（税込）</small></dd>
       </div>
     </dl>
     <figure class="photo venue" style="--ar:1/1; --pos:50% 45%">
