@@ -336,6 +336,28 @@
     letter-spacing:.04em;
   }
 
+  .titles{
+    list-style:none;
+    margin:0 0 1.5rem;
+    padding:1.125rem 1.25rem;
+    background:var(--ai-wash);
+    border-radius:2px;
+    display:flex; flex-direction:column; gap:.875rem;
+  }
+  .titles li{ display:flex; flex-direction:column; gap:.1rem; }
+  .titles .org{
+    font-size:.75rem;
+    letter-spacing:.1em;
+    line-height:1.6;
+    color:var(--ai);
+  }
+  .titles .role{
+    font-size:.9375rem;
+    font-weight:500;
+    line-height:1.6;
+    color:var(--ink);
+  }
+
   /* --- 写真（講師枠以外の共通スタイル） ----------------------- */
   .photo{ margin:0; }
   .photo .frame{
@@ -669,12 +691,16 @@
       </div>
       <div>
         <h3>身体のスペシャリスト</h3>
-        <p>廣戸聡一先生の一番弟子として、1996年から廣戸道場で施術。</p>
-        <p>2013年からは千葉ロッテとアドバイザリー契約を結び、野球だけではなく、さまざまな競技・幅広い年代のアスリートへ指導・施術を行ってきた身体のスペシャリストです。</p>
+        <ul class="titles">
+          <li><span class="org">レッシュプロジェクト</span><span class="role">トレーナー管理部長</span></li>
+          <li><span class="org">千葉ロッテマリーンズ</span><span class="role">テクニカル&amp;プレイヤーデベロップメント・インストラクター</span></li>
+        </ul>
+        <p>廣戸聡一先生の一番弟子として、1996年から廣戸道場で施術。2026年8月に同道場を退社し、現在は独立して施術・指導にあたっています。</p>
+        <p>2013年からは千葉ロッテと関わり、野球だけではなく、さまざまな競技・幅広い年代のアスリートへ指導・施術を行ってきた身体のスペシャリストです。</p>
         <ul class="credits">
           <li><span class="yr">1996–</span><span>廣戸聡一先生の一番弟子として廣戸道場で施術</span></li>
           <li><span class="yr">2013–</span><span>千葉ロッテとアドバイザリー契約</span></li>
-          <li><span class="yr">現在</span><span>競技・年代を問わず、アスリートへ指導・施術</span></li>
+          <li><span class="yr">2026.8–</span><span>廣戸道場を退社し、独立開業</span></li>
         </ul>
       </div>
     </div>
