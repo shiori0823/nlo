@@ -51,23 +51,23 @@
   .gymname small{ display:block; font-size:9.5pt; font-weight:500; color:var(--sub); letter-spacing:.08em; }
 
   h1{
-    font-size:56pt; font-weight:900; line-height:1.22;
-    margin:0 0 4mm;
+    font-size:50pt; font-weight:900; line-height:1.22;
+    margin:0 0 3.5mm;
   }
   .lead{
-    font-size:16pt; font-weight:700; line-height:1.7;
-    margin:0 0 6mm;
+    font-size:15pt; font-weight:700; line-height:1.65;
+    margin:0 0 5mm;
   }
 
-  .offers{ display:flex; flex-direction:column; gap:3mm; margin:0 0 6mm; }
+  .offers{ display:flex; flex-direction:column; gap:2.5mm; margin:0 0 5mm; }
   .offer{
     display:flex; align-items:center; gap:4mm;
     background:var(--tint);
     border-left:4mm solid var(--red);
-    padding:4.5mm 6mm;
+    padding:4mm 6mm;
   }
   .offer.blue{ border-left-color:var(--blue); }
-  .offer .label{ flex:1; font-size:19pt; font-weight:900; line-height:1.35; }
+  .offer .label{ flex:1; font-size:18pt; font-weight:900; line-height:1.35; }
   .offer .was{
     font-family:"Oswald",sans-serif;
     font-size:20pt; font-weight:700; color:var(--sub);
@@ -75,29 +75,29 @@
   }
   .offer .now{
     font-family:"Oswald",sans-serif;
-    font-size:33pt; font-weight:700; color:var(--red); line-height:1; white-space:nowrap;
+    font-size:31pt; font-weight:700; color:var(--red); line-height:1; white-space:nowrap;
   }
   .offer .now.jp{ font-family:"Zen Kaku Gothic New",sans-serif; font-size:27pt; font-weight:900; }
   .offer.blue .now{ color:var(--blue); }
 
-  .middle{ display:flex; gap:6mm; margin:0 0 6mm; }
-  .photo{ margin:0; width:50%; }
-  .photo img{ display:block; width:100%; height:74mm; object-fit:cover; object-position:50% 38%; }
+  .middle{ display:flex; gap:5mm; margin:0 0 5mm; }
+  .photo{ margin:0; width:64%; }
+  .photo img{ display:block; width:100%; height:112mm; object-fit:cover; object-position:50% 40%; }
   .photo figcaption{ font-size:9.5pt; color:var(--sub); line-height:1.5; margin-top:1.5mm; }
 
+  .side{ width:36%; display:flex; flex-direction:column; gap:4mm; }
   .voice{
-    width:50%;
     border:1.2mm solid var(--red);
-    padding:5mm 5.5mm;
+    padding:4.5mm 5mm;
     display:flex; flex-direction:column; gap:2.5mm;
   }
   .voice p{ margin:0; }
-  .voice .q{ font-size:14pt; font-weight:900; line-height:1.65; }
-  .voice .who{ font-size:11pt; font-weight:700; color:var(--ink); }
+  .voice .q{ font-size:12.5pt; font-weight:900; line-height:1.6; }
+  .voice .who{ font-size:10.5pt; font-weight:700; color:var(--ink); }
   .voice .note{ font-size:8.5pt; color:var(--sub); line-height:1.5; }
 
-  .forwho{ margin:0 0 6mm; }
-  .forwho p{ font-size:14pt; font-weight:700; line-height:1.7; margin:0; }
+  .forwho{ margin:0; }
+  .forwho p{ font-size:13.5pt; font-weight:700; line-height:1.65; margin:0; }
   .forwho .small{ font-size:12pt; font-weight:500; color:var(--sub); margin-top:1.5mm; }
 
   .spacer{ flex:1; min-height:1mm; }
@@ -163,17 +163,18 @@
       <img src="../assets/gym/members-group.jpg" alt="ノーリミッツ岡山の会員イベントの集合写真">
       <figcaption>年齢も目的もさまざまな方が通っています。</figcaption>
     </figure>
-    <div class="voice">
-      <p class="q">「自分では絶対に気づかないことに気づけて、できるようになりました。」</p>
-      <p class="q">「何歳になっても関係ない。できることは、まだたくさんあります。」</p>
-      <p class="who">40代女性・会員歴1年</p>
-      <p class="note">※個人の感想です。効果には個人差があります。</p>
+    <div class="side">
+      <div class="voice">
+        <p class="q">「自分では絶対に気づかないことに気づけて、できるようになりました。」</p>
+        <p class="q">「何歳になっても関係ない。できることは、まだたくさんあります。」</p>
+        <p class="who">40代女性・会員歴1年</p>
+        <p class="note">※個人の感想です。効果には個人差があります。</p>
+      </div>
+      <div class="forwho">
+        <p>はじめての方は、マシンの使い方からお教えします。</p>
+        <p class="small">自己流が不安な方には、パーソナルプランもご用意しています。</p>
+      </div>
     </div>
-  </div>
-
-  <div class="forwho">
-    <p>はじめての方は、マシンの使い方からお教えします。</p>
-    <p class="small">自己流が不安な方には、パーソナルプランもご用意しています。</p>
   </div>
 
   <div class="spacer"></div>
