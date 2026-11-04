@@ -45,13 +45,17 @@ await b.close();})()"
 ファイル名の番号が表示順です。スライドの内容を変更したあとPNGを作り直す場合は、
 Artifact側のスライドを更新してから書き出し直してください。
 
-## poster-trial-a3.pdf — トライアルキャンペーン ポスター（A3）
+## poster-trial-a3.pdf — トライアルキャンペーン ポスター（A3・屋外掲示）
 
-ジム入口・受付に掲示する、未入会の方向けのポスター。
+ジムの前に掲示し、通りがかりの人に読んでもらう前提のポスター。
 
 - 用紙：A3 縦（297×420mm）／余白なし設定で等倍印刷
 - 色：白地＋黒文字、強調は赤枠 `#C8102E`、金額の一部に濃い青 `#0B5FA5`
 - 掲示期限：2026年12月31日（キャンペーン終了日）
+- CTA：見学予約のQR（大／Square予約ページ）とホームページのQR（小）
+  - `assets/qr-booking.png` … https://book.squareup.com/appointments/wt2javqwtod98y/location/3D1YXSYDHHNYE/services
+  - `assets/qr-hp-okayama.png` … https://nolimits-gym-okayama.com/
+- 屋外掲示のため、ラミネート加工または屋外用メディアでの出力を推奨
 
 `poster-trial-a3.html` が元データ。書体は埋め込み済みで、
 作り直す手順は flyer-a4.pdf と同じ。
