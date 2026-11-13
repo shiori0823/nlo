@@ -236,6 +236,54 @@
     border-left:5px solid var(--orange); padding:.1rem 0 .1rem 1rem; margin:0;
   }
 
+  /* 当日限定パーソナル */
+  .personal{
+    border:3px solid var(--orange); border-radius:3px;
+    background:var(--paper); padding:1.75rem 1.25rem;
+  }
+  @media (min-width:700px){ .personal{ padding:2.25rem 2rem; } }
+  .personal .tag{
+    display:inline-block; background:var(--orange); color:var(--ink);
+    font-size:.875rem; font-weight:900; letter-spacing:.08em;
+    padding:.35rem 1rem; border-radius:2px; margin:0 0 1rem;
+  }
+  .personal h3{ font-size:clamp(1.375rem,4.8vw,1.75rem); margin-bottom:.5rem; }
+  .personal h3 .big-num{
+    font-family:var(--f-num); font-size:1.35em; font-weight:700;
+    color:var(--orange-ink); line-height:1;
+  }
+  .personal .limit{
+    font-size:1.0625rem; font-weight:900; color:var(--orange-ink);
+    margin:0 0 1rem; line-height:1.6;
+  }
+  .personal > p{ font-size:.9375rem; color:var(--sub); }
+  .perks{ list-style:none; margin:1.5rem 0; padding:0; display:grid; gap:.75rem; }
+  @media (min-width:640px){ .perks{ grid-template-columns:repeat(3,1fr); } }
+  .perks li{
+    background:var(--tint); border-radius:3px; padding:.9rem 1rem;
+    font-size:.9375rem; font-weight:700; line-height:1.7;
+  }
+  .slots{ background:var(--wash); border-radius:3px; padding:1.25rem; margin:1.5rem 0 0; }
+  .slots-h{
+    font-size:.8125rem; font-weight:900; letter-spacing:.12em;
+    color:var(--orange-ink); margin:0 0 .75rem; line-height:1;
+  }
+  .slot-list{
+    list-style:none; margin:0; padding:0;
+    display:grid; gap:.6rem; grid-template-columns:1fr 1fr;
+  }
+  .slot-list li{
+    display:flex; align-items:baseline; gap:.5rem;
+    background:var(--paper); border-radius:3px; padding:.6rem .9rem;
+  }
+  .slot-list .n{ font-size:1rem; font-weight:900; color:var(--orange-ink); line-height:1.4; }
+  .slot-list .t{ font-family:var(--f-num); font-size:1.375rem; font-weight:700; line-height:1.4; }
+  .personal .fcfs{
+    font-size:1.0625rem; font-weight:900; color:var(--orange-ink);
+    margin:1.25rem 0 0; line-height:1.7;
+  }
+  .personal .tiny{ font-size:.8125rem; color:var(--faint); line-height:1.8; margin:.5rem 0 0; }
+
   /* FAQ */
   .faq{ border-top:1px solid var(--rule); }
   .faq details{ border-bottom:1px solid var(--rule); }
@@ -454,6 +502,7 @@
       <div><dt>対象</dt><dd>競技種目を問わず、スポーツに取り組む方</dd></div>
       <div><dt>参加費</dt><dd>メンバー 3,300円／一般 5,500円<small>すべて税込</small></dd></div>
       <div><dt>特典</dt><dd>振り返り＆目標設定ワークシート</dd></div>
+      <div><dt>当日限定</dt><dd>45分パーソナル（先着4名）<small>セミナー終了後、12:00〜の時間枠でおこないます。別途お申し込みが必要です。</small></dd></div>
       <div><dt>講師</dt><dd>佐藤亮太（ノーリミッツ岡山）</dd></div>
     </dl>
     <a class="cta" href="https://square.link/u/9tAu5zzr" target="_blank" rel="noopener">▶ セミナーに申し込む</a>
@@ -461,8 +510,38 @@
   </div>
 </section>
 
-<!-- 年間6本セット -->
+<!-- 当日限定パーソナル -->
 <section class="sec">
+  <div class="wrap">
+    <p class="eyebrow">Option</p>
+    <h2>セミナー当日、<br>その場で指導を受けられます。</h2>
+    <div class="personal">
+      <p class="tag">当日限定</p>
+      <h3><span class="big-num">45</span>分パーソナル</h3>
+      <p class="limit">先着4名限定</p>
+      <p>あなたのトレーニング内容をもとに、重量設定・プログラム・フォームを個別に確認します。セミナーで決めた目標を、その日のうちに具体的なトレーニングへ落とし込めます。</p>
+      <ul class="perks">
+        <li>重量設定の見直し</li>
+        <li>トレーニングプログラムの調整</li>
+        <li>フォーム確認と改善アドバイス</li>
+      </ul>
+      <div class="slots">
+        <p class="slots-h">時間枠</p>
+        <ol class="slot-list">
+          <li><span class="n">①</span><span class="t">12:00〜</span></li>
+          <li><span class="n">②</span><span class="t">12:40〜</span></li>
+          <li><span class="n">③</span><span class="t">13:50〜</span></li>
+          <li><span class="n">④</span><span class="t">14:30〜</span></li>
+        </ol>
+      </div>
+      <p class="fcfs">先着順で受付いたします。</p>
+      <p class="tiny">お申し込み・ご相談は、受付スタッフまたは佐藤オーナーまで。セミナーのお申し込みとは別の受付となります。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 年間6本セット -->
+<section class="sec tinted">
   <div class="wrap">
     <p class="eyebrow">Archive</p>
     <h2>1年分の講座を、まとめて。</h2>
@@ -479,6 +558,7 @@
           <p class="amount" style="margin:0"><span class="v">29,800</span><span class="u">円（税込）／アーカイブ配信</span></p>
         </div>
       </div>
+      <p style="font-size:.875rem;color:var(--faint);line-height:1.8;margin:0 0 1.25rem">アーカイブの視聴期限は2027年3月31日です。</p>
       <p class="closing-line">12月20日の第6回が、1年間の集大成です。</p>
       <p style="margin-top:1.25rem">お申し込み・ご相談は、受付スタッフまたは佐藤オーナーまで。</p>
     </div>
@@ -506,6 +586,10 @@
       <details>
         <summary>年間6本セットには、今回の第6回も含まれますか？</summary>
         <div class="a">はい。今年おこなった全6回が対象で、12月20日の第6回も含まれます。いずれもアーカイブでご覧いただけます。</div>
+      </details>
+      <details>
+        <summary>当日の45分パーソナルは、どう申し込めばいいですか？</summary>
+        <div class="a">受付スタッフまたは佐藤オーナーまでお声がけください。先着4名限定で、セミナーのお申し込みとは別の受付となります。時間枠は12:00〜、12:40〜、13:50〜、14:30〜の4枠です。</div>
       </details>
       <details>
         <summary>セミナーでは実際に目標設定を行いますか？</summary>
