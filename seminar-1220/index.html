@@ -205,6 +205,37 @@
   .facts dd .num{ font-family:var(--f-num); font-size:1.0625rem; font-weight:700; }
   .facts dd small{ display:block; font-size:.8125rem; color:var(--faint); line-height:1.75; }
 
+  /* 年間6本セット */
+  .pack{
+    background:var(--wash); border-radius:3px;
+    padding:1.75rem 1.25rem;
+  }
+  @media (min-width:700px){ .pack{ padding:2.25rem 2rem; } }
+  .pack h3{ font-size:1.25rem; margin-bottom:.75rem; }
+  .pack > p{ font-size:.9375rem; color:var(--sub); }
+  .prices{ display:grid; gap:.875rem; margin:1.5rem 0; }
+  @media (min-width:620px){ .prices{ grid-template-columns:1fr 1fr; } }
+  .price-card{
+    background:var(--paper); border-radius:3px; padding:1.25rem 1.25rem;
+    display:flex; flex-direction:column; gap:.3rem;
+  }
+  .price-card.member{ border:3px solid var(--orange); }
+  .price-card.general{ border:1px solid var(--rule); }
+  .price-card .who{ font-size:.8125rem; font-weight:900; letter-spacing:.1em; color:var(--faint); }
+  .price-card.member .who{ color:var(--orange-ink); }
+  .price-card .amount{
+    display:flex; align-items:baseline; gap:.35rem; flex-wrap:wrap;
+  }
+  .price-card .v{
+    font-family:var(--f-num); font-size:2.125rem; font-weight:700; line-height:1.15;
+    color:var(--ink); font-variant-numeric:tabular-nums;
+  }
+  .price-card .u{ font-size:.8125rem; color:var(--faint); }
+  .pack .closing-line{
+    font-size:1rem; font-weight:900; line-height:1.75;
+    border-left:5px solid var(--orange); padding:.1rem 0 .1rem 1rem; margin:0;
+  }
+
   /* FAQ */
   .faq{ border-top:1px solid var(--rule); }
   .faq details{ border-bottom:1px solid var(--rule); }
@@ -430,6 +461,30 @@
   </div>
 </section>
 
+<!-- 年間6本セット -->
+<section class="sec">
+  <div class="wrap">
+    <p class="eyebrow">Archive</p>
+    <h2>1年分の講座を、まとめて。</h2>
+    <div class="pack">
+      <h3>勝ち筋をつくるトレーニング講座　年間6本セット</h3>
+      <p>今年おこなった全6回を、アーカイブでご覧いただけます。見逃した回も、もう一度観たい回も。ベンチプレス、スクワット、デッドリフト、ピーキング、試合設計、そして今回の振り返りまで。</p>
+      <div class="prices">
+        <div class="price-card member">
+          <p class="who" style="margin:0">メンバー</p>
+          <p class="amount" style="margin:0"><span class="v">19,800</span><span class="u">円／アーカイブ配信</span></p>
+        </div>
+        <div class="price-card general">
+          <p class="who" style="margin:0">一般</p>
+          <p class="amount" style="margin:0"><span class="v">29,800</span><span class="u">円／アーカイブ配信</span></p>
+        </div>
+      </div>
+      <p class="closing-line">12月20日の第6回が、1年間の集大成です。</p>
+      <p style="margin-top:1.25rem">お申し込み・ご相談は、受付スタッフまたは佐藤オーナーまで。</p>
+    </div>
+  </div>
+</section>
+
 <!-- FAQ -->
 <section class="sec">
   <div class="wrap">
@@ -447,6 +502,10 @@
       <details>
         <summary>当日会場に行けなくても参加できますか？</summary>
         <div class="a">オンラインアーカイブ配信を予定しています。視聴期間などの詳細は別途ご案内します。</div>
+      </details>
+      <details>
+        <summary>年間6本セットには、今回の第6回も含まれますか？</summary>
+        <div class="a">はい。今年おこなった全6回が対象で、12月20日の第6回も含まれます。いずれもアーカイブでご覧いただけます。</div>
       </details>
       <details>
         <summary>セミナーでは実際に目標設定を行いますか？</summary>
