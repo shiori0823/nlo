@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>モチベーションに左右されない、正しい振り返りのやり方と目標の決め方</title>
+<meta name="description" content="勝ち筋をつくるトレーニング講座 第6回・最終回。今年の努力を、来年の結果につなげる60分。2026年12月20日（日）10:30〜11:30／ノーリミッツ岡山・アーカイブ配信あり。">
+<meta property="og:title" content="モチベーションに左右されない、正しい振り返りのやり方と目標の決め方">
+<meta property="og:description" content="今年の努力を、来年の結果につなげる60分。勝ち筋をつくるトレーニング講座 第6回・最終回。">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Oswald:wght@500;600;700&display=swap">
+<style>
+  /* ノーリミッツ岡山：白地・黒文字、差し色はブランドのオレンジのみ。
+     小さな文字のオレンジは濃いほうを使い、白地で4.5:1以上を確保する。 */
+  :root{
+    color-scheme: light;
+    --paper:      #ffffff;
+    --tint:       #f7f4f0;
+    --wash:       #fdeee2;
+    --ink:        #111418;
+    --sub:        #4a4f55;
+    --faint:      #6f757b;
+    --rule:       #ddd8d2;
+    --orange:     #ea6a1e;
+    --orange-ink: #c2510d;
+
+    --f-body: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Yu Gothic", system-ui, sans-serif;
+    --f-num: "Oswald", Arial, sans-serif;
+
+    --col: 44rem;
+    --wide: 60rem;
+  }
+
+  *,*::before,*::after{ box-sizing:border-box; }
+  html{ -webkit-text-size-adjust:100%; scroll-behavior:smooth; }
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--f-body);
+    font-size:1rem;
+    font-weight:500;
+    line-height:1.95;
+    letter-spacing:.01em;
+    padding-bottom:5.5rem;
+  }
+  @media (min-width:800px){ body{ padding-bottom:0; } }
+  img{ max-width:100%; height:auto; display:block; }
+  a{ color:var(--orange-ink); }
+
+  .wrap{
+    width:100%;
+    max-width:var(--col);
+    margin-inline:auto;
+    padding-left:max(1.25rem, env(safe-area-inset-left, 0px));
+    padding-right:max(1.25rem, env(safe-area-inset-right, 0px));
+  }
+  .wrap.wide{ max-width:var(--wide); }
+
+  .sec{ padding-block:4rem; }
+  @media (min-width:800px){ .sec{ padding-block:5.5rem; } }
+  .tinted{ background:var(--tint); }
+
+  h1,h2,h3{ margin:0; font-weight:900; line-height:1.45; text-wrap:balance; }
+  h2{ font-size:1.5rem; margin-bottom:1.75rem; }
+  @media (min-width:800px){ h2{ font-size:1.875rem; } }
+  h3{ font-size:1.125rem; }
+  p{ margin:0 0 1.4rem; }
+  p:last-child{ margin-bottom:0; }
+  strong{ font-weight:900; }
+
+  .eyebrow{
+    display:flex; align-items:center; gap:.7rem;
+    font-size:.8125rem; font-weight:900; letter-spacing:.18em;
+    color:var(--orange-ink); line-height:1; margin:0 0 1rem;
+  }
+  .eyebrow::before{ content:""; width:1.75rem; height:3px; background:var(--orange); flex:none; }
+
+  /* ヒーロー */
+  .hero{ background:var(--paper); padding-block:2.5rem 3.5rem; }
+  .hero-grid{ display:grid; gap:2rem; }
+  @media (min-width:860px){
+    .hero-grid{ grid-template-columns:1fr 20rem; gap:3rem; align-items:center; }
+  }
+  .badge{
+    display:inline-block;
+    background:var(--orange); color:var(--ink);
+    font-size:.875rem; font-weight:900; letter-spacing:.08em;
+    padding:.4rem 1rem; border-radius:2px; margin-bottom:1.25rem;
+  }
+  .hero h1{ font-size:clamp(1.5rem,5.4vw,2.375rem); line-height:1.4; margin-bottom:1.25rem; }
+  .hero .sub{ font-size:1.125rem; font-weight:900; line-height:1.7; margin-bottom:1rem; }
+  .hero .sub em{ font-style:normal; background:linear-gradient(transparent 62%, var(--wash) 62%); }
+  .hero .desc{ font-size:.9375rem; color:var(--sub); margin-bottom:1.75rem; }
+  .when{
+    border-top:3px solid var(--ink); border-bottom:1px solid var(--rule);
+    padding-block:1.25rem; margin-bottom:1.75rem;
+    display:flex; flex-direction:column; gap:.35rem;
+  }
+  .when .date{
+    font-family:var(--f-num); font-size:clamp(1.625rem,5.5vw,2.25rem); font-weight:700;
+    line-height:1.15; color:var(--ink); letter-spacing:.01em;
+  }
+  .when .date span{ font-family:var(--f-body); font-size:.68em; font-weight:900; }
+  .when .place{ font-size:.9375rem; font-weight:700; color:var(--sub); }
+  .hero img{ border-radius:3px; width:100%; height:auto; }
+  .credit{ font-size:.75rem; color:var(--faint); line-height:1.6; margin-top:.5rem; }
+
+  /* CTA */
+  .cta{
+    display:inline-flex; align-items:center; justify-content:center;
+    width:100%; gap:.5rem;
+    background:var(--orange); color:var(--ink);
+    font-size:1.0625rem; font-weight:900; letter-spacing:.04em; line-height:1.4;
+    padding:1.05rem 1.5rem; border-radius:3px; text-decoration:none;
+    box-shadow:0 2px 0 rgba(17,20,24,.18);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .cta:hover{ transform:translateY(-1px); box-shadow:0 4px 0 rgba(17,20,24,.18); }
+  .cta:focus-visible{ outline:3px solid var(--ink); outline-offset:3px; }
+  @media (min-width:560px){ .cta{ width:auto; min-width:20rem; } }
+  .cta-note{ margin:.75rem 0 0; font-size:.8125rem; color:var(--faint); line-height:1.75; }
+
+  /* 悩みリスト */
+  .checks{ list-style:none; margin:0 0 2rem; padding:0; }
+  .checks li{
+    display:grid; grid-template-columns:1.4rem 1fr; gap:.25rem;
+    align-items:start; padding:.85rem 0;
+    border-bottom:1px solid var(--rule); font-size:.9375rem; line-height:1.85;
+  }
+  .checks li:first-child{ border-top:1px solid var(--rule); }
+  .checks li::before{
+    content:""; width:.55rem; height:.55rem; margin-top:.75rem;
+    background:var(--orange); border-radius:1px;
+  }
+
+  .lead-line{
+    font-size:1.0625rem; font-weight:900; line-height:1.8;
+    border-left:5px solid var(--orange); padding:.1rem 0 .1rem 1rem;
+    margin:0 0 1.5rem;
+  }
+
+  /* 3つのこと */
+  .points{ display:flex; flex-direction:column; gap:2rem; }
+  .point{ display:grid; grid-template-columns:3rem 1fr; gap:0 1rem; align-items:start; }
+  .point .n{
+    font-family:var(--f-num); font-size:2rem; font-weight:700; line-height:1;
+    color:var(--orange-ink); border-top:3px solid var(--orange); padding-top:.3rem;
+  }
+  .point h3{ margin-bottom:.6rem; }
+  .point p{ font-size:.9375rem; color:var(--sub); }
+  @media (max-width:520px){
+    .point{ grid-template-columns:1fr; gap:.6rem; }
+    .point .n{ justify-self:start; padding-right:2rem; }
+  }
+
+  /* ステップ */
+  .steps{ display:flex; flex-direction:column; gap:1rem; margin-bottom:2rem; }
+  .step{
+    background:var(--paper); border:2px solid var(--ink); border-radius:3px;
+    padding:1.25rem 1.25rem;
+  }
+  .step .label{
+    display:inline-block; background:var(--ink); color:var(--paper);
+    font-family:var(--f-num); font-size:.8125rem; font-weight:700; letter-spacing:.12em;
+    padding:.15rem .6rem; border-radius:2px; margin-bottom:.6rem;
+  }
+  .step h3{ margin-bottom:.45rem; }
+  .step p{ font-size:.9375rem; color:var(--sub); }
+
+  .gift{
+    background:var(--wash); border-radius:3px; padding:1.5rem 1.25rem;
+    display:flex; flex-direction:column; gap:.5rem;
+  }
+  .gift .tag{
+    font-size:.8125rem; font-weight:900; letter-spacing:.12em; color:var(--orange-ink);
+  }
+  .gift h3{ font-size:1.1875rem; }
+  .gift p{ font-size:.9375rem; color:var(--sub); margin:0; }
+
+  /* 講師 */
+  .teacher{ display:grid; gap:1.75rem; }
+  @media (min-width:760px){
+    .teacher{ grid-template-columns:17rem 1fr; gap:2.5rem; align-items:start; }
+  }
+  .teacher figure{ margin:0; }
+  .teacher img{ border-radius:3px; width:100%; }
+  .teacher .name{ font-size:1.75rem; font-weight:900; line-height:1.3; margin:0 0 .3rem; }
+  .teacher .org{ font-size:.9375rem; font-weight:700; color:var(--orange-ink); margin:0 0 1.25rem; }
+  .teacher p{ font-size:.9375rem; color:var(--sub); }
+
+  /* 開催概要 */
+  .facts{ margin:0 0 2rem; border-top:3px solid var(--ink); }
+  .facts > div{
+    display:grid; grid-template-columns:1fr; padding:.9rem 0;
+    border-bottom:1px solid var(--rule);
+  }
+  @media (min-width:560px){
+    .facts > div{ grid-template-columns:7.5rem 1fr; gap:1rem; align-items:baseline; }
+  }
+  .facts dt{ font-size:.8125rem; font-weight:900; letter-spacing:.06em; color:var(--faint); line-height:1.9; }
+  .facts dd{ margin:0; font-size:.9375rem; line-height:1.9; }
+  .facts dd .num{ font-family:var(--f-num); font-size:1.0625rem; font-weight:700; }
+  .facts dd small{ display:block; font-size:.8125rem; color:var(--faint); line-height:1.75; }
+
+  /* FAQ */
+  .faq{ border-top:1px solid var(--rule); }
+  .faq details{ border-bottom:1px solid var(--rule); }
+  .faq summary{
+    display:grid; grid-template-columns:1.4rem 1fr 1.25rem; gap:.5rem;
+    align-items:start; padding:1.1rem 0; cursor:pointer; list-style:none;
+    font-size:1rem; font-weight:900; line-height:1.75;
+  }
+  .faq summary::-webkit-details-marker{ display:none; }
+  .faq summary::before{ content:"Q"; font-family:var(--f-num); font-weight:700; color:var(--orange-ink); line-height:1.75; }
+  .faq summary::after{
+    content:""; width:.6rem; height:.6rem; margin-top:.55rem; justify-self:end;
+    border-right:2px solid var(--faint); border-bottom:2px solid var(--faint);
+    transform:rotate(45deg); transition:transform .2s ease;
+  }
+  .faq details[open] summary::after{ transform:rotate(-135deg); }
+  .faq summary:focus-visible{ outline:3px solid var(--orange); outline-offset:2px; }
+  .faq .a{ padding:0 1rem 1.4rem 1.9rem; font-size:.9375rem; color:var(--sub); line-height:1.9; }
+
+  /* クロージング */
+  .closing{ background:var(--orange); color:var(--ink); }
+  .closing h2{ font-size:clamp(1.375rem,5vw,2rem); }
+  .closing p{ font-size:1rem; }
+  .closing .eyebrow{ color:var(--ink); }
+  .closing .eyebrow::before{ background:var(--ink); }
+  .closing .cta{ background:var(--ink); color:var(--paper); box-shadow:0 2px 0 rgba(17,20,24,.25); }
+  .closing .cta-note{ color:var(--ink); opacity:.75; }
+  .closing .big{ font-size:1.25rem; font-weight:900; line-height:1.7; }
+
+  .site-footer{
+    padding-block:2.5rem; border-top:1px solid var(--rule);
+    font-size:.8125rem; color:var(--faint); line-height:1.9;
+  }
+
+  /* スマホ固定CTA */
+  .sticky{
+    position:fixed; left:0; right:0; bottom:0; z-index:20;
+    background:var(--paper); border-top:1px solid var(--rule);
+    padding:.7rem max(1.25rem, env(safe-area-inset-left, 0px));
+    padding-bottom:calc(.7rem + env(safe-area-inset-bottom, 0px));
+    box-shadow:0 -6px 20px -14px rgba(0,0,0,.45);
+  }
+  @media (min-width:800px){ .sticky{ display:none; } }
+
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    *{ transition:none !important; animation:none !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ヒーロー -->
+<header class="hero">
+  <div class="wrap wide">
+    <div class="hero-grid">
+      <div>
+        <p class="badge">勝ち筋をつくるトレーニング講座　第6回・最終回</p>
+        <h1>モチベーションに左右されない、<br>正しい振り返りのやり方と<br>目標の決め方</h1>
+        <p class="sub"><em>今年の努力を、来年の結果につなげる60分。</em></p>
+        <p class="desc">モチベーションでトレーニングの質を落とさない方法・コツを習得します。</p>
+        <div class="when">
+          <p class="date" style="margin:0">2026.12.20 <span>（日）10:30〜11:30</span></p>
+          <p class="place" style="margin:0">会場：ノーリミッツ岡山／オンラインアーカイブ配信あり</p>
+        </div>
+        <a class="cta" href="#apply">▶ セミナーに申し込む</a>
+        <p class="cta-note">メンバー 3,300円／一般 5,500円　参加特典：振り返り＆目標設定ワークシート</p>
+      </div>
+      <figure style="margin:0">
+        <img src="../assets/sato/stage.jpg" alt="試合に臨む佐藤亮太" width="1050" height="1400">
+        <p class="credit">Photo: SAMURAI POWERLIFTING MEDIA</p>
+      </figure>
+    </div>
+  </div>
+</header>
+
+<!-- 悩み -->
+<section class="sec tinted">
+  <div class="wrap">
+    <p class="eyebrow">For</p>
+    <h2>こんなことはありませんか？</h2>
+    <ul class="checks">
+      <li><span>今年も頑張ったけれど、どれだけ成長したのかわからない</span></li>
+      <li><span>目標を立てても、途中で曖昧になってしまう</span></li>
+      <li><span>練習の結果に一喜一憂し、モチベーションが安定しない</span></li>
+      <li><span>振り返りをしても、反省だけで終わってしまう</span></li>
+      <li><span>来年こそ結果を出したいけれど、何から始めればいいかわからない</span></li>
+    </ul>
+    <p>そんな方にこそ、知ってほしいことがあります。</p>
+    <p class="lead-line">振り返りは、できなかったことを反省するためだけのものではありません。</p>
+    <p>今年できたこと、うまくいかなかったこと、その理由を整理し、次の行動につなげるためのものです。</p>
+    <p>そして、目標設定も同じです。</p>
+    <p>「来年こそ自己ベストを更新したい！」<br>そう思うだけでなく、<strong>そのために何をするのかまで決める。</strong></p>
+    <p>それが、目標達成への第一歩になります。</p>
+  </div>
+</section>
+
+<!-- 問いかけ -->
+<section class="sec">
+  <div class="wrap">
+    <p class="eyebrow">Why</p>
+    <h2>今年のトレーニング、<br>本当に振り返れていますか？</h2>
+    <p>1年間、たくさんの時間をトレーニングに費やしてきたと思います。</p>
+    <p>自己ベストを更新できた人。<br>思いどおりの結果が出なかった人。<br>新しいことに挑戦した人。</p>
+    <p>それぞれに、積み重ねてきた経験があるはずです。</p>
+    <p>でも、その経験を次の成長につなげられているでしょうか？</p>
+    <p>「良かった」「悪かった」——そんな感想だけで終わらせてしまうのは、もったいない。</p>
+    <p class="lead-line">大切なのは、結果を評価することだけではなく、結果につながった行動を振り返ること。</p>
+    <p>そして、振り返りから見えてきた課題を、来年の目標と日々のトレーニングに結びつけることです。</p>
+    <p>目標と行動が明確になれば、その日のモチベーションだけに頼らず、目的を持って練習に取り組みやすくなります。</p>
+  </div>
+</section>
+
+<!-- 得られる3つのこと -->
+<section class="sec tinted">
+  <div class="wrap">
+    <p class="eyebrow">Outcome</p>
+    <h2>このセミナーで得られる3つのこと</h2>
+    <div class="points">
+      <article class="point">
+        <div class="n">1</div>
+        <div>
+          <h3>正しい振り返りの方法がわかる</h3>
+          <p>成功や失敗を感情だけで判断せず、できたこと・改善点を整理する方法を学びます。今年の取り組みを振り返り、自分の成長と課題を明確にしましょう。</p>
+        </div>
+      </article>
+      <article class="point">
+        <div class="n">2</div>
+        <div>
+          <h3>来年の目標が具体的になる</h3>
+          <p>「強くなりたい」「結果を出したい」という思いを、具体的な目標に落とし込みます。目指す結果と現在地を整理し、次に何が必要なのかを考えます。</p>
+        </div>
+      </article>
+      <article class="point">
+        <div class="n">3</div>
+        <div>
+          <h3>次の練習でやることが決まる</h3>
+          <p>目標を立てて終わりにはしません。目標達成に向けて、次の練習から何に取り組むのかまで具体的に決めていきます。</p>
+        </div>
+      </article>
+    </div>
+    <p class="lead-line" style="margin-top:2rem">セミナーを終えたとき、来年の目標と、そのための最初の一歩が明確になっていることを目指します。</p>
+  </div>
+</section>
+
+<!-- シリーズ最終回 -->
+<section class="sec">
+  <div class="wrap wide">
+    <div class="teacher">
+      <figure>
+        <img src="../assets/sato/deadlift.jpg" alt="デッドリフトを引き切る佐藤亮太" width="1050" height="1400">
+        <p class="credit">Photo: SAMURAI POWERLIFTING MEDIA</p>
+      </figure>
+      <div>
+        <p class="eyebrow">Series</p>
+        <h2>勝ち筋をつくる<br>トレーニング講座、最終回。</h2>
+        <p>これまでの講座では、ベンチプレス、スクワット、デッドリフト、ピーキング、試合設計など、目標達成につながるトレーニングについて学んできました。</p>
+        <p>そして、第6回はその締めくくり。</p>
+        <p class="lead-line">学んだこと、実践したことを振り返り、次の目標達成につなげる時間です。</p>
+        <p>もちろん、これまでの講座に参加していない方も大歓迎。競技種目や経験年数に関係なく、自分自身の1年を振り返り、来年の目標を立てるためにご参加いただけます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- セミナー内容 -->
+<section class="sec tinted">
+  <div class="wrap">
+    <p class="eyebrow">Contents</p>
+    <h2>セミナー内容</h2>
+    <div class="steps">
+      <div class="step">
+        <p class="label" style="margin-top:0">STEP 1</p>
+        <h3>今年を振り返る</h3>
+        <p>今年の目標、取り組み、結果を整理し、自分の成長と課題を見つけます。</p>
+      </div>
+      <div class="step">
+        <p class="label" style="margin-top:0">STEP 2</p>
+        <h3>来年の目標を決める</h3>
+        <p>振り返りをもとに、来年達成したい目標を具体的にします。</p>
+      </div>
+      <div class="step">
+        <p class="label" style="margin-top:0">STEP 3</p>
+        <h3>次の行動を決める</h3>
+        <p>目標に向けて、日々のトレーニングで何をするのかを決めます。</p>
+      </div>
+    </div>
+    <div class="gift">
+      <p class="tag" style="margin:0">参加特典</p>
+      <h3>振り返り＆目標設定ワークシート</h3>
+      <p>学んだ内容を実践しながら、今年の振り返りから来年の目標、次の行動までを整理できます。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 講師 -->
+<section class="sec">
+  <div class="wrap">
+    <p class="eyebrow">Instructor</p>
+    <h2>講師紹介</h2>
+    <p class="name">佐藤亮太</p>
+    <p class="org">ノーリミッツ岡山</p>
+    <p>トレーニングの結果を次の成長につなげるために必要な、振り返りと目標設定の考え方をお伝えします。</p>
+  </div>
+</section>
+
+<!-- 開催概要 -->
+<section class="sec tinted" id="apply">
+  <div class="wrap">
+    <p class="eyebrow">Details</p>
+    <h2>開催概要</h2>
+    <dl class="facts">
+      <div><dt>日時</dt><dd><span class="num">2026年12月20日（日）10:30〜11:30</span></dd></div>
+      <div><dt>会場</dt><dd>ノーリミッツ岡山</dd></div>
+      <div><dt>形式</dt><dd>対面<small>オンラインアーカイブ配信あり</small></dd></div>
+      <div><dt>対象</dt><dd>競技種目を問わず、スポーツに取り組む方</dd></div>
+      <div><dt>参加費</dt><dd>メンバー 3,300円／一般 5,500円</dd></div>
+      <div><dt>特典</dt><dd>振り返り＆目標設定ワークシート</dd></div>
+      <div><dt>講師</dt><dd>佐藤亮太（ノーリミッツ岡山）</dd></div>
+    </dl>
+    <a class="cta" href="#">▶ セミナーに申し込む</a>
+    <p class="cta-note">お申し込み・ご質問は、受付スタッフまたは佐藤オーナーまでお気軽にどうぞ。</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec">
+  <div class="wrap">
+    <p class="eyebrow">FAQ</p>
+    <h2>よくある質問</h2>
+    <div class="faq">
+      <details open>
+        <summary>過去の講座に参加していなくても大丈夫ですか？</summary>
+        <div class="a">はい。今回が初めての方でもご参加いただけます。振り返りと目標設定を実践する内容です。</div>
+      </details>
+      <details>
+        <summary>パワーリフティング以外の競技でも参加できますか？</summary>
+        <div class="a">はい。競技種目を問わず、スポーツに取り組むすべての方を対象としています。</div>
+      </details>
+      <details>
+        <summary>当日会場に行けなくても参加できますか？</summary>
+        <div class="a">オンラインアーカイブ配信を予定しています。視聴期間などの詳細は別途ご案内します。</div>
+      </details>
+      <details>
+        <summary>セミナーでは実際に目標設定を行いますか？</summary>
+        <div class="a">はい。ワークシートを使いながら、今年の振り返りと来年の目標設定、次の練習で取り組むことまで考えていきます。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- クロージング -->
+<section class="sec closing">
+  <div class="wrap">
+    <p class="eyebrow">Message</p>
+    <h2>今年の努力を、<br>来年の結果につなげよう。</h2>
+    <p>今年の経験を振り返り、自分の成長と課題を知る。</p>
+    <p>来年の目標を決め、そのために必要な行動を明確にする。</p>
+    <p class="big">2027年を、目標に向かって<br>迷わず進める1年に。</p>
+    <p>12月20日、一緒に今年を振り返り、来年の勝ち筋をつくりましょう。</p>
+    <a class="cta" href="#apply">▶ セミナーに申し込む</a>
+    <p class="cta-note">勝ち筋をつくるトレーニング講座 第6回・最終回／2026年12月20日（日）10:30〜11:30</p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>ノーリミッツ岡山　NO LIMITS OKAYAMA<br>勝ち筋をつくるトレーニング講座 第6回・最終回｜2026年12月20日（日）</p>
+  </div>
+</footer>
+
+<div class="sticky">
+  <a class="cta" href="#apply">▶ セミナーに申し込む</a>
+</div>
+
+</body>
+</html>
