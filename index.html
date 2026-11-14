@@ -85,6 +85,16 @@
   @media (min-width:700px){ .card{ padding:2rem 1.75rem; } }
   .card.lead{ border:3px solid var(--orange); }
 
+  .shot{ margin:-1.5rem -1.25rem .15rem; }
+  @media (min-width:700px){ .shot{ margin:-2rem -1.75rem .35rem; } }
+  .shot img{ width:100%; height:230px; object-fit:cover; }
+  @media (min-width:700px){ .shot img{ height:280px; } }
+  .shot figcaption{
+    font-size:.75rem; color:var(--faint); line-height:1.6;
+    padding:.5rem 1.25rem 0;
+  }
+  @media (min-width:700px){ .shot figcaption{ padding-inline:1.75rem; } }
+
   .tagrow{ display:flex; flex-wrap:wrap; align-items:center; gap:.6rem; }
   .tag{
     font-size:.8125rem; font-weight:900; letter-spacing:.08em; line-height:1.3;
@@ -153,6 +163,10 @@
     <div class="cards">
 
       <article class="card lead">
+        <figure class="shot">
+          <img src="assets/sato/stage.jpg" alt="試合に臨む佐藤亮太" width="1050" height="1400" style="object-position:50% 20%">
+          <figcaption>Photo: SAMURAI POWERLIFTING MEDIA</figcaption>
+        </figure>
         <div class="tagrow">
           <span class="tag">募集中</span>
           <span class="deadline">第6回・最終回</span>
@@ -173,6 +187,10 @@
       </article>
 
       <article class="card">
+        <figure class="shot">
+          <img src="assets/gym/members-group.jpg" alt="ノーリミッツ岡山のメンバーのみなさん" width="1350" height="1800" style="object-position:50% 42%">
+          <figcaption>ジムメンバー限定イベントの様子</figcaption>
+        </figure>
         <div class="tagrow">
           <span class="tag">入会キャンペーン</span>
           <span class="deadline">12月31日まで</span>
