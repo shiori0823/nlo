@@ -1,33 +1,30 @@
-# 小杉先生 コンディショニング・整体イベント LP
+# ノーリミッツ岡山　告知ページ
 
-静的な 1 ページのランディングページです。ビルド不要で、`index.html` を
-ブラウザで開くか、そのままサーバーに置けば公開できます。
-
-## 構成
+GitHub Pages で公開している静的サイト。ビルド不要。
 
 ```
-index.html      LP 本体（CSS・JS は埋め込み）
-assets/         画像置き場（講師写真など）
+index.html                お知らせ一覧（トップ）
+seminar-1220/             第6回セミナー LP（2026-12-20）
+archive/kosugi-2026/      終了：小杉先生 コンディショニング・整体
+assets/                   共有素材（QRコード・写真）
+print/                    印刷・サイネージ用の書き出し
+build/                    サイネージとポスターの生成スクリプト
 ```
 
-## よく編集する箇所
+## 公開
 
-| 内容 | 場所 |
-| --- | --- |
-| 申込みリンク | `index.html` 内の `https://forms.gle/SshC7FAoAGaS4ykSA`（4 か所） |
-| 講師写真 | `assets/kosugi.jpg` を差し替え（`assets/README.md` 参照） |
-| 日程・料金 | 「開催概要」「3つの参加方法」セクション |
+Settings → Pages → Deploy from a branch →
+ブランチ `claude/dazzling-allen-wdallb` ／ フォルダ `/ (root)`
 
-## ローカルで確認する
+- トップ　https://shiori0823.github.io/nlo/
+- 第6回セミナー　https://shiori0823.github.io/nlo/seminar-1220/
 
-```sh
-python3 -m http.server 8000
-# http://localhost:8000 を開く
-```
+`.nojekyll` を置いてあるので Jekyll のビルドは走らない。
 
-## デザインの前提
+## 決まりごと
 
-- 配色・字体はすべて `index.html` 冒頭の CSS 変数（`:root`）に集約
-- ライト／ダークの両テーマに対応
-- スマホ幅（〜400px）でも横スクロールが出ないレイアウト
-- スマホでは画面下に申込みボタンを固定表示
+- 色は白地・黒文字、差し色はブランドのオレンジ（`#ea6a1e`）のみ。
+  小さい文字のオレンジは `#c2510d`（白地で4.5:1以上）を使う。
+- 画像はページと同じ階層に置く。`../assets/` のような書き方はしない
+  （公開場所によって表示されなくなるため）。
+- 終了したイベントは `archive/` に移し、冒頭に終了バナーと `noindex` を入れる。
