@@ -21,6 +21,19 @@ Settings → Pages → Deploy from a branch →
 
 `.nojekyll` を置いてあるので Jekyll のビルドは走らない。
 
+### 公開されないとき
+
+ビルドもデプロイも成功しているのに
+「There isn't a GitHub Pages site here.」と出ることがある。
+そのときは Pages の設定を作り直す。
+
+1. Settings → Pages → ブランチの欄で `None` を選ぶ（ここで「保存」が押せるようになる）
+2. 保存 → ページを再読み込み
+3. ブランチ `claude/dazzling-allen-wdallb` ／ `/ (root)` を選び直して保存
+
+同じ値を選び直すだけでは保存ボタンが押せないので、
+いったん `None` を挟むのがコツ。
+
 ## 決まりごと
 
 - 色は白地・黒文字、差し色はブランドのオレンジ（`#ea6a1e`）のみ。
