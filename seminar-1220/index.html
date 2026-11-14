@@ -270,14 +270,18 @@
   }
   .slot-list{
     list-style:none; margin:0; padding:0;
-    display:grid; gap:.6rem; grid-template-columns:1fr 1fr;
+    display:grid; gap:.6rem; grid-template-columns:1fr;
   }
+  @media (min-width:560px){ .slot-list{ grid-template-columns:1fr 1fr; } }
   .slot-list li{
     display:flex; align-items:baseline; gap:.5rem;
     background:var(--paper); border-radius:3px; padding:.6rem .9rem;
   }
   .slot-list .n{ font-size:1rem; font-weight:900; color:var(--orange-ink); line-height:1.4; }
-  .slot-list .t{ font-family:var(--f-num); font-size:1.375rem; font-weight:700; line-height:1.4; }
+  .slot-list .t{ font-family:var(--f-num); font-size:1.3125rem; font-weight:700; line-height:1.4; font-variant-numeric:tabular-nums; }
+  .personal .prices{ margin:1.5rem 0 0; }
+  .personal .price-card{ border-radius:3px; }
+  .personal .price-card.general{ border:1px solid var(--rule); }
   .personal .fcfs{
     font-size:1.0625rem; font-weight:900; color:var(--orange-ink);
     margin:1.25rem 0 0; line-height:1.7;
@@ -502,7 +506,7 @@
       <div><dt>対象</dt><dd>競技種目を問わず、スポーツに取り組む方</dd></div>
       <div><dt>参加費</dt><dd>メンバー 3,300円／一般 5,500円<small>すべて税込</small></dd></div>
       <div><dt>特典</dt><dd>振り返り＆目標設定ワークシート</dd></div>
-      <div><dt>当日限定</dt><dd>45分パーソナル（先着4名）<small>セミナー終了後、12:00〜の時間枠でおこないます。別途お申し込みが必要です。</small></dd></div>
+      <div><dt>当日限定</dt><dd>45分パーソナル　メンバー 5,000円／一般 7,000円<small>先着4名。12:00〜15:15の4枠でおこないます。すべて税込、別途お申し込みが必要です。</small></dd></div>
       <div><dt>講師</dt><dd>佐藤亮太（ノーリミッツ岡山）</dd></div>
     </dl>
     <a class="cta" href="https://square.link/u/9tAu5zzr" target="_blank" rel="noopener">▶ セミナーに申し込む</a>
@@ -526,13 +530,23 @@
         <li>フォーム確認と改善アドバイス</li>
       </ul>
       <div class="slots">
-        <p class="slots-h">時間枠</p>
+        <p class="slots-h">時間枠（各45分）</p>
         <ol class="slot-list">
-          <li><span class="n">①</span><span class="t">12:00〜</span></li>
-          <li><span class="n">②</span><span class="t">12:40〜</span></li>
-          <li><span class="n">③</span><span class="t">13:50〜</span></li>
-          <li><span class="n">④</span><span class="t">14:30〜</span></li>
+          <li><span class="n">①</span><span class="t">12:00〜12:45</span></li>
+          <li><span class="n">②</span><span class="t">12:50〜13:35</span></li>
+          <li><span class="n">③</span><span class="t">13:40〜14:25</span></li>
+          <li><span class="n">④</span><span class="t">14:30〜15:15</span></li>
         </ol>
+      </div>
+      <div class="prices">
+        <div class="price-card member">
+          <p class="who" style="margin:0">メンバー</p>
+          <p class="amount" style="margin:0"><span class="v">5,000</span><span class="u">円（税込）／45分</span></p>
+        </div>
+        <div class="price-card general">
+          <p class="who" style="margin:0">一般</p>
+          <p class="amount" style="margin:0"><span class="v">7,000</span><span class="u">円（税込）／45分</span></p>
+        </div>
       </div>
       <p class="fcfs">先着順で受付いたします。</p>
       <p class="tiny">お申し込み・ご相談は、受付スタッフまたは佐藤オーナーまで。セミナーのお申し込みとは別の受付となります。</p>
@@ -589,7 +603,7 @@
       </details>
       <details>
         <summary>当日の45分パーソナルは、どう申し込めばいいですか？</summary>
-        <div class="a">受付スタッフまたは佐藤オーナーまでお声がけください。先着4名限定で、セミナーのお申し込みとは別の受付となります。時間枠は12:00〜、12:40〜、13:50〜、14:30〜の4枠です。</div>
+        <div class="a">受付スタッフまたは佐藤オーナーまでお声がけください。先着4名限定で、セミナーのお申し込みとは別の受付となります。時間枠は12:00〜12:45、12:50〜13:35、13:40〜14:25、14:30〜15:15の4枠、参加費はメンバー 5,000円／一般 7,000円（税込）です。</div>
       </details>
       <details>
         <summary>セミナーでは実際に目標設定を行いますか？</summary>
