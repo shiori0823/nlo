@@ -13,6 +13,12 @@
 - CTA は記事末に1か所だけ。本文の途中には入れない。
 - セミナー終了後（12/21以降）は、CTA をトライアルキャンペーンか見学予約に差し替える。
 
+## 見出し画像
+
+`header-01.jpg`（1280×670）。`../build/note-header.mjs` で作り直せる。
+note の見出し画像は 1280×670 が基準。小さく表示されても読めるよう、
+タイトルは3行まで、数字（180kg→80kg）は大きく。
+
 ## 写真
 
 `../assets/sato/walk.jpg` `../assets/sato/lockout.jpg` `../assets/sato/smile.jpg`
